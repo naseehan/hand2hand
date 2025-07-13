@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   Phone, 
   Smartphone, 
@@ -15,7 +15,7 @@ import {
   X,
   Wrench,
   Award,
-  Users,
+  // Users,
   Zap
 } from 'lucide-react';
 
@@ -74,21 +74,24 @@ function App() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      text: "Amazing service! Fixed my iPhone screen in just 20 minutes. Professional and affordable.",
+      name: "Rema Devi",
+      text: "Amazing service! Fixed my Redmi screen in just 20 minutes. Professional and affordable.",
       rating: 5
     },
     {
-      name: "Mike Chen",
-      text: "My MacBook was completely dead, but they brought it back to life. Highly recommend!",
+      name: "Ajmal Khan",
+      text: "My samsung phone was completely dead, but they brought it back to life. Highly recommend!",
       rating: 5
     },
     {
-      name: "Lisa Rodriguez",
+      name: "Arun Pradeep",
       text: "Great customer service and honest pricing. They explained everything clearly.",
       rating: 5
     }
   ];
+
+  const date = new Date().getFullYear()
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -212,7 +215,7 @@ function App() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100 hover:-translate-y-1 transition-transform">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl  border border-gray-100 hover:-translate-y-1 transition-transform">
                 <div className="mb-6">{service.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
@@ -461,13 +464,14 @@ function App() {
               <ul className="space-y-2 text-gray-400">
                 <li>(555) 123-TECH</li>
                 <li>info@techfixpro.com</li>
-                <li>123 Tech Street</li>
-                <li>Digital City, DC 12345</li>
+                <li>Parippally road, Pallickal</li>
+                
+                <li>Kerala 695604</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 TechFix Pro. All rights reserved.</p>
+            <p>&copy; {date} TechFix Pro. All rights reserved.</p>
           </div>
         </div>
       </footer>
