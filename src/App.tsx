@@ -138,7 +138,7 @@ function App() {
 
             <div className="hidden md:flex items-center space-x-4">
               <span className="text-gray-700 font-medium">
-                Call: (555) 123-TECH
+                Call: +91 94973 32980
               </span>
               <button
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
@@ -196,7 +196,7 @@ function App() {
               </a>
               <div className="px-3 py-2">
                 <span className="text-gray-700 font-medium">
-                  Call: (555) 123-TECH
+                  Call: +91 94973 32980
                 </span>
               </div>
             </div>
@@ -304,7 +304,10 @@ function App() {
                 <div className="text-blue-600 font-semibold mb-4">
                   {service.price}
                 </div>
-                <button className="w-full bg-blue-50 text-blue-600 py-2 rounded-lg hover:bg-blue-100 transition-colors font-medium">
+                <button className="w-full bg-blue-50 text-blue-600 py-2 rounded-lg hover:bg-blue-100 transition-colors font-medium" onClick={() => ( window.open(
+      `https://wa.me/917034546546?text=Hi, I need an ${encodeURIComponent(service.title)}`,
+      "_blank"
+    ))}>
                   Learn More
                 </button>
               </div>
@@ -319,7 +322,7 @@ function App() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Why Choose TechFix Pro?
+                Why Choose hand2Hand mobiles?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 With over 2 years of experience in device repair, we've built a
@@ -372,8 +375,13 @@ function App() {
             </div>
 
             <div className="mt-12 lg:mt-0">
-              <img
+              {/* <img
                 src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Professional repair workspace"
+                className="w-full h-96 object-cover rounded-2xl shadow-lg"
+              /> */}
+              <img
+                src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg"
                 alt="Professional repair workspace"
                 className="w-full h-96 object-cover rounded-2xl shadow-lg"
               />
@@ -476,14 +484,14 @@ function App() {
                   <PhoneCall className="h-6 w-6 text-blue-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Call Us</div>
-                    <div className="text-gray-600">(555) 123-TECH</div>
+                    <div className="text-gray-600">+91 94973 32980</div>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-6 w-6 text-blue-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Email Us</div>
-                    <div className="text-gray-600">info@techfixpro.com</div>
+                    <div className="text-gray-600">info@hand2Handmobiles.com</div>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -581,15 +589,15 @@ function App() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>(555) 123-TECH</li>
-                <li>info@techfixpro.com</li>
+                <li>+91 94973 32980</li>
+                <li>info@hand2Handmobiles.com</li>
                 <li>Parippally road, Pallickal</li>
                 <li>Kerala 695604</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; {date} TechFix Pro. All rights reserved.</p>
+            <p>&copy; {date} hand2Hand mobiles. All rights reserved.</p>
           </div>
         </div>
       </footer>
