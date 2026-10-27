@@ -233,7 +233,7 @@ export default function Footer({ onOpenBooking }: FooterProps) {
           <p>
             &copy; {currentYear} {BUSINESS_CONFIG.name}. All rights reserved. Located on Parippally Road, Pallickal, Kerala.
             {" "}Made by{" "}
-            <a href="https://github.com/naseehan" target="_blank" rel="noopener" className="text-slate-400 hover:text-blue-400 transition-colors">
+            <a href="https://www.naseeh.in/" target="_blank" rel="noopener" className="text-slate-400 hover:text-blue-400 transition-colors">
               Naseeh
             </a>
           </p>
