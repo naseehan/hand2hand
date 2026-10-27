@@ -199,26 +199,6 @@ export default function Home({ onOpenBooking }: HomeProps) {
                   </div>
                 </div>
 
-                {/* Floating Rating Badge */}
-                <div className="absolute -bottom-6 -left-4 sm:-left-6 bg-white p-4 sm:p-5 rounded-2xl shadow-xl border border-gray-100 flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-yellow-50 rounded-xl flex items-center justify-center text-yellow-600 font-extrabold text-lg">
-                    4.9
-                  </div>
-                  <div>
-                    <div className="flex text-yellow-400 space-x-0.5">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current text-yellow-400" />
-                      ))}
-                    </div>
-                    <div className="text-xs font-bold text-gray-900 mt-0.5">
-                      500+ Happy Customers
-                    </div>
-                    <div className="text-[11px] text-gray-500">
-                      Across Pallickal & nearby areas
-                    </div>
-                  </div>
-                </div>
-
                 {/* Floating Express Badge */}
                 <div className="absolute -top-4 -right-4 sm:-right-6 bg-blue-600 text-white py-2 px-3.5 rounded-xl shadow-lg flex items-center space-x-2 text-xs font-bold">
                   <Clock className="w-4 h-4 text-blue-200" />
@@ -434,10 +414,10 @@ export default function Home({ onOpenBooking }: HomeProps) {
 
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
               <div className="text-3xl sm:text-4xl font-black text-blue-600 mb-1">
-                {BUSINESS_CONFIG.stats.averageRating}
+                {BUSINESS_CONFIG.stats.turnaroundTime}
               </div>
-              <div className="text-xs font-bold text-gray-800 uppercase tracking-wider">Customer Rating</div>
-              <div className="text-[11px] text-gray-500 mt-0.5">Over 500+ reviews</div>
+              <div className="text-xs font-bold text-gray-800 uppercase tracking-wider">Express Repairs</div>
+              <div className="text-[11px] text-gray-500 mt-0.5">Screens & batteries</div>
             </div>
           </div>
 

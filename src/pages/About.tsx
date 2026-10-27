@@ -133,8 +133,8 @@ export default function About({ onOpenBooking }: AboutProps) {
               <div className="text-xs sm:text-sm font-semibold text-blue-100 uppercase tracking-wider">Repair Success Rate</div>
             </div>
             <div>
-              <div className="text-3xl sm:text-4xl font-black mb-1">{BUSINESS_CONFIG.stats.averageRating} ★</div>
-              <div className="text-xs sm:text-sm font-semibold text-blue-100 uppercase tracking-wider">Customer Rating</div>
+              <div className="text-3xl sm:text-4xl font-black mb-1">{BUSINESS_CONFIG.stats.turnaroundTime}</div>
+              <div className="text-xs sm:text-sm font-semibold text-blue-100 uppercase tracking-wider">Express Repairs</div>
             </div>
           </div>
         </div>

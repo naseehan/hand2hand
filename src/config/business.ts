@@ -75,8 +75,6 @@ export const BUSINESS_CONFIG = {
     yearsInBusiness: "2+",
     devicesRepaired: "1,000+",
     successRate: "98%",
-    averageRating: "4.9",
-    totalReviews: "500+",
     turnaroundTime: "30 Mins"
   },
 
