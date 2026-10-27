@@ -232,6 +232,10 @@ export default function Footer({ onOpenBooking }: FooterProps) {
         <div className="border-t border-slate-800/80 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 gap-4">
           <p>
             &copy; {currentYear} {BUSINESS_CONFIG.name}. All rights reserved. Located on Parippally Road, Pallickal, Kerala.
+            {" "}Made by{" "}
+            <a href="https://github.com/naseehan" target="_blank" rel="noopener" className="text-slate-400 hover:text-blue-400 transition-colors">
+              Naseeh
+            </a>
           </p>
           <div className="flex space-x-6">
             <span>90-Day Limited Warranty</span>
