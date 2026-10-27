@@ -64,8 +64,8 @@ export default function Services({ onOpenBooking }: ServicesProps) {
   return (
     <div className="bg-slate-50 min-h-screen">
       <SEO
-        title="Repair Services & Pricing"
-        description="Comprehensive device repair services at Hand2Hand Mobiles Pallickal. Screen replacements, battery fixes, water damage recovery, motherboard soldering, and laptop repairs with 90-day warranty."
+        title="Repair Services & Prices in Pallickal"
+        description="Screen, battery, charging port, water damage, motherboard & laptop repairs in Pallickal, Kerala. Upfront prices and a 90-day warranty."
       />
 
       {/* Page Header */}

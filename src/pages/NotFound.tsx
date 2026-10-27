@@ -6,7 +6,7 @@ import { BUSINESS_CONFIG } from "../config/business";
 export default function NotFound() {
   return (
     <div className="min-h-[70vh] bg-slate-50 flex items-center justify-center px-4 py-16">
-      <SEO title="Page Not Found" description="The requested page could not be found." />
+      <SEO title="Page Not Found" description="The requested page could not be found." noindex />
       
       <div className="max-w-md w-full text-center bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-gray-100">
         <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">

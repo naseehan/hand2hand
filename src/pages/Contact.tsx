@@ -55,7 +55,7 @@ export default function Contact() {
       `🔧 *Issue:* ${issue}`,
       message.trim() ? `📝 *Message:* ${message.trim()}` : null,
       `---------------------------------`,
-      `📍 *Inquiry from:* hand2handmobiles.com`,
+      `📍 *Inquiry from:* hand2handmobiles.shop`,
       `Please provide an estimate and availability.`
     ].filter(Boolean).join("\n");
 
@@ -76,8 +76,8 @@ export default function Contact() {
   return (
     <div className="bg-slate-50 min-h-screen">
       <SEO
-        title="Contact Us & Store Location"
-        description="Visit Hand2Hand Mobiles on Parippally Road, Pallickal, Kerala 695604. Call +91 94973 32980 or chat on WhatsApp for fast repair estimates and store directions."
+        title="Contact & Store Location in Pallickal"
+        description="Visit Hand2Hand Mobiles on Parippally Road, Pallickal, Kerala 695604. Call +91 94973 32980 or WhatsApp us for repair quotes and directions."
       />
 
       {/* Page Header */}

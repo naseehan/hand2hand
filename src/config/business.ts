@@ -46,6 +46,7 @@ export interface SupportedBrand {
 
 export const BUSINESS_CONFIG = {
   name: "Hand2Hand Mobiles",
+  siteUrl: "https://www.hand2handmobiles.shop",
   legalName: "Hand2Hand Mobiles Repair & Service Centre",
   tagline: "Your Trusted Device Repair Specialists",
   shortDescription: "Professional smartphone, tablet, and laptop repairs with genuine parts, express 30-minute service, and a 90-day warranty in Pallickal, Kerala.",

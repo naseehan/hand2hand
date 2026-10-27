@@ -6,17 +6,19 @@ interface SEOProps {
   description?: string;
   canonicalPath?: string;
   ogType?: string;
+  noindex?: boolean;
 }
 
 export default function SEO({
   title,
   description = BUSINESS_CONFIG.shortDescription,
   canonicalPath = "",
-  ogType = "website"
+  ogType = "website",
+  noindex = false
 }: SEOProps) {
-  const fullTitle = title 
-    ? `${title} | ${BUSINESS_CONFIG.name} Pallickal`
-    : `${BUSINESS_CONFIG.name} — Expert Phone, Tablet & Laptop Repair in Pallickal, Kerala`;
+  const fullTitle = title
+    ? `${title} | ${BUSINESS_CONFIG.name}`
+    : `${BUSINESS_CONFIG.name} — Phone & Laptop Repair in Pallickal`;
 
   useEffect(() => {
     // Set document title
@@ -42,8 +44,15 @@ export default function SEO({
     setMetaTag("name", "twitter:title", fullTitle);
     setMetaTag("name", "twitter:description", description);
 
+    // Keep pages like the 404 out of search results
+    if (noindex) {
+      setMetaTag("name", "robots", "noindex");
+    } else {
+      document.querySelector('meta[name="robots"]')?.remove();
+    }
+
     // Update canonical link
-    const currentUrl = window.location.origin + (canonicalPath || window.location.pathname);
+    const currentUrl = BUSINESS_CONFIG.siteUrl + (canonicalPath || window.location.pathname);
     let canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
     if (!canonical) {
       canonical = document.createElement("link");
@@ -52,7 +61,7 @@ export default function SEO({
     }
     canonical.setAttribute("href", currentUrl);
 
-  }, [fullTitle, description, canonicalPath, ogType]);
+  }, [fullTitle, description, canonicalPath, ogType, noindex]);
 
   return null;
 }

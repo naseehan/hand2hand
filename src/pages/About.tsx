@@ -59,8 +59,8 @@ export default function About({ onOpenBooking }: AboutProps) {
   return (
     <div className="bg-white">
       <SEO
-        title="About Our Service Centre"
-        description="Learn about Hand2Hand Mobiles in Pallickal, Kerala. With 2+ years of experience and 1,000+ repaired devices, our certified technicians deliver precision phone, tablet, and laptop repairs."
+        title="About Our Service Centre in Pallickal"
+        description="Hand2Hand Mobiles in Pallickal, Kerala: 2+ years and 1,000+ devices repaired. Certified technicians for precise phone, tablet and laptop repairs."
       />
 
       {/* Hero / About Banner */}

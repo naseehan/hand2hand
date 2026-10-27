@@ -87,8 +87,8 @@ export default function Home({ onOpenBooking }: HomeProps) {
   return (
     <div className="bg-white">
       <SEO 
-        title="Phone & Electronics Repair in Pallickal, Kerala"
-        description="Fast, reliable phone, tablet, and laptop repair services in Pallickal, Kerala. Screen replacement in 30 mins, genuine parts, 90-day warranty, and free diagnostics."
+        title="Phone & Laptop Repair in Pallickal"
+        description="Phone, tablet & laptop repair in Pallickal, Kerala. 30-minute screen replacement, genuine parts, 90-day warranty & free diagnosis. Call +91 94973 32980."
       />
 
       {/* Hero Section */}

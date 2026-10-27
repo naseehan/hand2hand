@@ -75,7 +75,7 @@ export default function Process({ onOpenBooking }: ProcessProps) {
     <div className="bg-white">
       <SEO
         title="Repair Process, Turnaround & Warranty"
-        description="Learn how Hand2Hand Mobiles repairs your device in 4 simple steps. Express 30-minute repairs, 90-day warranty, transparent pricing, and frequently asked questions."
+        description="How Hand2Hand Mobiles repairs your device in 4 simple steps: express 30-minute repairs, 90-day warranty, transparent pricing and common questions answered."
       />
 
       {/* Page Header */}
