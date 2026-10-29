@@ -1,5 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import MobileStickyBar from "./components/layout/MobileStickyBar";
@@ -78,6 +79,7 @@ export default function App() {
         />
 
       </div>
+      <Analytics />
     </Router>
   );
 }
